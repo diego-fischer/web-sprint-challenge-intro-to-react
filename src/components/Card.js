@@ -4,7 +4,23 @@ import styled, { css } from 'styled-components'
 export const CardWrapper = styled.div`
   overflow: hidden;
   ${'' /* padding: 0 0 32px; */}
-  padding: 10px 0 10px 0;
+  ${'' /* padding: 10px 0 10px 0; */}
+  margin: 20px 0 0 0;
+  width: 800px;
+  font-family: Quicksand, arial, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+`
+
+export const DetailRow = styled.div`
+  overflow: hidden;
+  ${'' /* padding: 0 0 32px; */}
+  ${'' /* padding: 10px 0 10px 0; */}
   margin: 20px 0 0 0;
   width: 800px;
   font-family: Quicksand, arial, sans-serif;
@@ -12,6 +28,40 @@ export const CardWrapper = styled.div`
   border-radius: 5px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+`
+
+export const NameRow = styled.div`
+  overflow: hidden;
+  ${'' /* padding: 0 0 32px; */}
+  ${'' /* padding: 10px 0 10px 0; */}
+  ${'' /* margin: 20px 0 0 0; */}
+	height: 50px;
+  width: 800px;
+  font-family: Quicksand, arial, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+`
+
+export const DetailsContainer = styled.div`
+  overflow: hidden;
+  ${'' /* padding: 0 0 32px; */}
+  ${'' /* padding: 10px 0 10px 0; */}
+  ${'' /* margin: 20px 0 0 0; */}
+	${'' /* height: 400px; */}
+  width: 800px;
+  font-family: Quicksand, arial, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   align-content: center;

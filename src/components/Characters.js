@@ -30,7 +30,7 @@ export default function Characters(props) {
               mass={el.mass}
               name={el.name}
               url={el.url}
-              skin_color={el.skin_color}
+              skinColor={el.skin_color}
               species={el.species}
               starships={el.starships}
               vehicles={el.vehicles}

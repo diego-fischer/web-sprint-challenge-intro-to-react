@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import './custom-styling.css'
 import React, { useState } from 'react'
-import Details from './Details'
+import DetailData from './DetailData'
 import {
   CardWrapper,
   CardHeader,
@@ -13,6 +13,8 @@ import {
   CardOptionsItem,
   CardOptions,
   CardOptionsNote,
+  NameRow,
+  DetailsContainer,
   CardButton,
   CardLink,
 } from './Card'
@@ -23,6 +25,8 @@ export default function Character(props) {
     width: 30px;
     text-align: left;
   `
+
+  console.log('PROPS IN CHARACTER', props)
   const decideWhatToDo = () => {
     console.log('CLICKED!')
     console.log('EXPANDED', expanded)
@@ -35,15 +39,40 @@ export default function Character(props) {
 
   return (
     <CardWrapper>
-      <div className='characterName'>
-        <CardHeader>{props.name}</CardHeader>
-      </div>
-      <div className='emptySpace' />
-      <div className='expandBtn' onClick={decideWhatToDo}>
-        <ExpandBtn>+</ExpandBtn>
-      </div>
+      <NameRow>
+        <div className='characterName'>
+          <CardHeader>{props.name}</CardHeader>
+        </div>
 
-      {expanded && <Details props={props} />}
+        <div className='emptySpace' />
+
+        <div className='expandBtn' onClick={decideWhatToDo}>
+          <ExpandBtn>+</ExpandBtn>
+        </div>
+      </NameRow>
+      {expanded && (
+        <DetailsContainer>
+          <DetailData
+            key={props.name}
+            birthYear={props.birthYear}
+            created={props.created}
+            edited={props.edited}
+            eyeColor={props.eyeColor}
+            films={props.films}
+            gender={props.gender}
+            hairColor={props.hairColor}
+            height={props.height}
+            homeworld={props.homeworld}
+            mass={props.mass}
+            name={props.name}
+            url={props.url}
+            skin_color={props.skinColor}
+            species={props.species}
+            starships={props.starships}
+            vehicles={props.vehicles}
+          />
+        </DetailsContainer>
+      )}
     </CardWrapper>
   )
 }
