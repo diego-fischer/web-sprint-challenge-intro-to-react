@@ -17,7 +17,6 @@ You are not allowed to collaborate during the sprint challenge.
 - [ ] Follow instructions to set up Codegrade's Webhook and Deploy Key.
 - [ ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
 - [ ] Check to see that Codegrade has accepted your git submission.
-      x
       For a step-by-step on setting up Codegrade see [this guide.](https://www.notion.so/lambdaschool/Submitting-an-assignment-via-Code-Grade-A-Step-by-Step-Walkthrough-07bd65f5f8364e709ecb5064735ce374)
 
 ## Project Instructions
@@ -81,6 +80,13 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+   React is a technology that allows developers to focus on the desired results wanted on the UI (i.e. declarative programming). By using React we can describe the UI (e.g. through JSX) rather than spend time manipulating the DOM directly. This makes the process of building UIs much more productive. React also makes it easy for developers to create components (i.e. independent and reusable code), which can be imported and exported as needed.
+
 1. Describe component state.
+   State is an object which has properties that control the behavior of the desired component.
+
 1. Describe props.
+   Props are objects which can be passed from one component to another.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+   Side effects are changes which happen outside of a function's local environment (e.g. an API call conducted through axios). We'll normally call useEffect to trigger a side effect. When the side effect is resolved we'll then use useState to make changes to state, which can in turn be used by component props so components render while using dynamic data.
