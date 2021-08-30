@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex; /*👉df👈*/
+  flex-direction: column; /*👉df👈*/
+  justify-content: center; /*👉df👈*/
+  align-items: center; /*👉df👈*/
+  align-content: center; /*👉df👈*/
 }
 .Header {
   color: #443e3e;

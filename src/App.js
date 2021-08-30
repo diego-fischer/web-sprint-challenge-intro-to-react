@@ -25,6 +25,10 @@ const App = () => {
 
   return (
     <React.Fragment>
+      <h1 style={{ 'text-align': 'center', margin: '50px 0 0 0' }}>
+        Star Wars Cave!!!
+      </h1>
+      <h2 style={{ 'text-align': 'center' }}>By Diego Fischer</h2>
       {objArr == null ? (
         <Loading>Loading</Loading>
       ) : (
